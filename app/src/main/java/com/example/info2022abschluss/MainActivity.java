@@ -85,6 +85,100 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     tv_turnCounter.setText("X gewinnt!");
                 }
             }
+            if (b_2_2.getText() == "X") {
+                if (b_3_3.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+        }
+        if (b_2_1.getText() == "X") {
+            if (b_2_2.getText() == "X") {
+                if (b_2_3.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+            if (b_1_2.getText() == "X") {
+                if (b_3_2.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+            if (b_1_1.getText() == "X") {
+                if (b_3_3.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+        }
+        if (b_3_1.getText() == "X") {
+            if (b_3_2.getText() == "X") {
+                if (b_3_3.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+            if (b_2_3.getText() == "X") {
+                if (b_1_3.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+            if (b_1_1.getText() == "X") {
+                if (b_2_2.getText() == "X") {
+                    tv_turnCounter.setText("X gewinnt!");
+                }
+            }
+        }
+
+
+
+
+        if (b_1_1.getText() == "O") {
+            if (b_1_2.getText() == "O") {
+                if (b_1_3.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+            if (b_2_1.getText() == "O") {
+                if (b_3_1.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+            if (b_2_2.getText() == "O") {
+                if (b_3_3.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+        }
+        if (b_2_2.getText() == "O") {
+            if (b_2_1.getText() == "O") {
+                if (b_2_3.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+            if (b_1_2.getText() == "O") {
+                if (b_3_2.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+            if (b_1_1.getText() == "O") {
+                if (b_3_3.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+        }
+        if (b_3_3.getText() == "O") {
+            if (b_3_2.getText() == "O") {
+                if (b_3_1.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+            if (b_2_3.getText() == "O") {
+                if (b_1_3.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
+            if (b_1_1.getText() == "O") {
+                if (b_2_2.getText() == "O") {
+                    tv_turnCounter.setText("O gewinnt!");
+                }
+            }
         }
         }
     }
