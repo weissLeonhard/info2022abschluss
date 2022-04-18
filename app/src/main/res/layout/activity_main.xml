@@ -21,20 +21,17 @@
             <Button
                 android:id="@+id/b_1_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/b_1_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/b_1_3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
         </TableRow>
 
         <TableRow
@@ -45,20 +42,17 @@
             <Button
                 android:id="@+id/b_2_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/b_2_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/b_2_3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
         </TableRow>
 
         <TableRow
@@ -69,20 +63,17 @@
             <Button
                 android:id="@+id/b_3_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/b_3_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/b_3_3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
         </TableRow>
 
     </TableLayout>
@@ -91,7 +82,7 @@
         android:id="@+id/tv_turnCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="n/a ist dran!"
+        android:text="Gebt eure Namen ein und beginnt!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tl_game" />
 
@@ -100,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="Spieler Hinzufügen"
+        android:text="Match beginnen"
         app:layout_constraintTop_toBottomOf="@+id/tv_turnCounter"
         tools:layout_editor_absoluteX="1dp" />
 
@@ -111,16 +102,28 @@
         android:layout_marginTop="1dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Spielername"
+        android:text="Spieler 1"
         app:layout_constraintBottom_toTopOf="@+id/lv_matchHistory"
         app:layout_constraintTop_toBottomOf="@+id/b_createPlayer"
         tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/et_player2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Spieler 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/lv_matchHistory"
         android:layout_width="409dp"
         android:layout_height="511dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_player1Name"/>
+        app:layout_constraintTop_toBottomOf="@id/et_player1Name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
