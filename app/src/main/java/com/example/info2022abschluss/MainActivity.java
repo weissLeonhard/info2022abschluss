@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         b_createPlayer = (Button) this.findViewById(R.id.b_createPlayer);
         tv_turnCounter = (TextView) this.findViewById(R.id.tv_turnCounter);
-        lv_players = (ListView) this.findViewById(R.id.lv_players);
-        et_playerName = (EditText) this.findViewById(R.id.et_playerName);
+        lv_players = (ListView) this.findViewById(R.id.lv_matchHistory);
+        et_playerName = (EditText) this.findViewById(R.id.et_player1Name);
 
         b_1_1.setOnClickListener(this);
         b_1_2.setOnClickListener(this);

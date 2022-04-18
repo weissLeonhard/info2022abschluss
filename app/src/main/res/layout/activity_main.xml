@@ -105,23 +105,22 @@
         tools:layout_editor_absoluteX="1dp" />
 
     <EditText
-        android:id="@+id/et_playerName"
+        android:id="@+id/et_player1Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Spielername"
-        app:layout_constraintBottom_toTopOf="@+id/lv_players"
-        app:layout_constraintTop_toBottomOf="@+id/b_createPlayer" />
+        app:layout_constraintBottom_toTopOf="@+id/lv_matchHistory"
+        app:layout_constraintTop_toBottomOf="@+id/b_createPlayer"
+        tools:layout_editor_absoluteX="1dp" />
 
     <ListView
-        android:id="@+id/lv_players"
+        android:id="@+id/lv_matchHistory"
         android:layout_width="409dp"
         android:layout_height="511dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_playerName">
-
-    </ListView>
+        app:layout_constraintTop_toBottomOf="@id/et_player1Name"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,43 +1,43 @@
 package com.example.info2022abschluss;
 
 public class Player {
-    private String name;
-    private Integer gamesPlayed;
-    private Integer gamesWon;
+    private String name1;
+    private String winner;
+    private String name2;
 
     //Konstruktor
-    public Player(String nm, Integer gP, Integer gW) {
-        this.name = nm;
-        this.gamesPlayed = gP;
-        this.gamesWon = gW;
+    public Player(String nm1, String win, String nm2) {
+        this.name1 = nm1;
+        this.winner = win;
+        this.name2 = nm2;
     }
     //GetterSetter
 
-    public String getName() {
-        return name;
+    public String getName1() {
+        return name1;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName1(String name) {
+        this.name1 = name;
     }
 
-    public Integer getGamesPlayed() {
-        return gamesPlayed;
+    public String getWinner() {
+        return winner;
     }
 
-    public void setGamesPlayed(Integer gamesPlayed) {
-        this.gamesPlayed = gamesPlayed;
+    public void setWinner(String Winner) {
+        this.winner = winner;
     }
 
-    public Integer getGamesWon() {
-        return gamesWon;
+    public String getName2() {
+        return name2;
     }
 
-    public void setGamesWon(Integer gamesWon) {
-        this.gamesWon = gamesWon;
+    public void setName2(String name2) {
+        this.name2 = name2;
     }
     public String toString() {
-        return name + " " + gamesPlayed + " " + gamesWon;
+        return name1 + " " + winner + " " + name2;
     }
 }
 
