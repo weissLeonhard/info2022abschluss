@@ -15,8 +15,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 //BingBong
+//Diese ganze App funktioniert gut, aber der code is absolut irgendwas
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+    //Buttons und Variablen initialisieren
     private Button b_1_1;
     private Button b_1_2;
     private Button b_1_3;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Zuweisung zu xml ids
 
         b_1_1 = (Button) this.findViewById(R.id.b_1_1);
         b_1_2 = (Button) this.findViewById(R.id.b_1_2);
@@ -67,6 +68,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lv_players = (ListView) this.findViewById(R.id.lv_matchHistory);
         et_player1Name = (EditText) this.findViewById(R.id.et_player1Name);
         et_player2Name = (EditText) this.findViewById(R.id.et_player2Name);
+
+        //Onclicks undso
 
         b_1_1.setOnClickListener(this);
         b_1_2.setOnClickListener(this);
@@ -91,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Button clickedButton = (Button) view;
+        //Rundenstart-Button
         if (clickedButton == b_createPlayer) {
             if (matchInProgress == false) {
                 player1 = et_player1Name.getText().toString();
@@ -104,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
 
-
+        //ALternierende Züge
         } else if (clickedButton.getText() != "X" & matchInProgress == true) {
             if (clickedButton.getText() != "O") {
                 if (turnCounter % 2 == 0) {
@@ -182,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //Stitch
         //Stitch
-
+    //"Gewinn-Funktion" - Dialogbox bei Spielende und Reset aller Buttons und Anzeigen
     private void winnerDialog(String winner) {
 
         Player matchNew;
@@ -212,8 +216,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         et_player1Name.setText("Spieler 1");
         et_player2Name.setText("Spieler 2");
 
-
-
         AlertDialog.Builder dialog=new AlertDialog.Builder(this);
         if (winner == "<--") {
             dialog.setMessage(player1 + " hat gewonnen!");
@@ -223,12 +225,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dialog.setMessage("Unentschieden!");
         }
         dialog.setTitle("Ergebnis!");
+        //Es sind eigentlich nicht beide Auswahlmöglichkeiten nötig, ich hab sie aber ganz witzig gefunden
+        //Könnte man noch einbauen so zum aussuchen ob man es speichern will oder nicht, aber es ist 03:30 Uhr
         dialog.setPositiveButton("Aha",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,
                                         int which) {
-
-                        Toast.makeText(getApplicationContext(), "Ergebnis eingetragen",Toast.LENGTH_LONG).show();
+                        //Richtig coole Mini-Nachrichten unten am Bildschirm
+                        Toast.makeText(getApplicationContext(), "Ergebnis eingetragen - Pfeil zeigt auf Sieger",Toast.LENGTH_LONG).show();
                     }
                 });
         dialog.setNegativeButton("Ok",new DialogInterface.OnClickListener() {

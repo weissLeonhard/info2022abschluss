@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
 
+    //So ziemlich das gleiche wie für den Taschenrechner nur halt hierauf angepasst
+
     private static final String DATABASE_NAME = "tictactoeINFO";
     private static final Integer DATABASE_VERSION = 1;
 
