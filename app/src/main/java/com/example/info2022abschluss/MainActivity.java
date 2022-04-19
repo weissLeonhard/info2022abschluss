@@ -118,129 +118,66 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         }
-        if (b_1_1.getText() == "X") {
-            if (b_1_2.getText() == "X") {
-                if (b_1_3.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
-            if (b_2_1.getText() == "X") {
-                if (b_3_1.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
-            if (b_2_2.getText() == "X") {
-                if (b_3_3.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
+        //Gewinnercheck-Logikblock
+        //Habe leider keine elegantere Lösung gefunden, die im Zeitrahmen liegt
+        if (b_1_1.getText() == "X" & b_1_2.getText() == "X" & b_1_3.getText() == "X") {
+            winnerDialog("<--");
         }
-        if (b_2_1.getText() == "X") {
-            if (b_2_2.getText() == "X") {
-                if (b_2_3.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
-            if (b_1_2.getText() == "X") {
-                if (b_3_2.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
-            if (b_1_1.getText() == "X") {
-                if (b_3_3.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
+        if (b_2_1.getText() == "X" & b_2_2.getText() == "X" & b_2_3.getText() == "X") {
+            winnerDialog("<--");
         }
-        if (b_3_1.getText() == "X") {
-            if (b_3_2.getText() == "X") {
-                if (b_3_3.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
-            if (b_2_3.getText() == "X") {
-                if (b_1_3.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
-            if (b_1_1.getText() == "X") {
-                if (b_2_2.getText() == "X") {
-                    tv_turnCounter.setText("X gewinnt!");
-                    winnerDialog("<--");
-                }
-            }
+        if (b_3_1.getText() == "X" & b_3_2.getText() == "X" & b_3_3.getText() == "X") {
+            winnerDialog("<--");
         }
-        if (b_1_1.getText() == "O") {
-            if (b_1_2.getText() == "O") {
-                if (b_1_3.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-            if (b_2_1.getText() == "O") {
-                if (b_3_1.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-            if (b_2_2.getText() == "O") {
-                if (b_3_3.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
+
+
+        if (b_1_1.getText() == "X" & b_2_1.getText() == "X" & b_3_1.getText() == "X") {
+            winnerDialog("<--");
         }
-        if (b_2_2.getText() == "O") {
-            if (b_2_1.getText() == "O") {
-                if (b_2_3.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-            if (b_1_2.getText() == "O") {
-                if (b_3_2.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-            if (b_1_1.getText() == "O") {
-                if (b_3_3.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
+        if (b_1_2.getText() == "X" & b_2_2.getText() == "X" & b_3_2.getText() == "X") {
+            winnerDialog("<--");
         }
-        if (b_3_3.getText() == "O") {
-            if (b_3_2.getText() == "O") {
-                if (b_3_1.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-            if (b_2_3.getText() == "O") {
-                if (b_1_3.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-            if (b_1_1.getText() == "O") {
-                if (b_2_2.getText() == "O") {
-                    tv_turnCounter.setText("O gewinnt!");
-                    winnerDialog("-->");
-                }
-            }
-    if (turnCounter >= 9) {
-        winnerDialog("---");
-    }
+        if (b_1_3.getText() == "X" & b_2_3.getText() == "X" & b_3_3.getText() == "X") {
+            winnerDialog("<--");
         }
+        if (b_1_1.getText() == "X" & b_2_2.getText() == "X" & b_3_3.getText() == "X") {
+            winnerDialog("<--");
+        }
+        if (b_3_1.getText() == "X" & b_2_2.getText() == "X" & b_1_3.getText() == "X") {
+            winnerDialog("<--");
+        }
+
+        if (b_1_1.getText() == "O" & b_1_2.getText() == "O" & b_1_3.getText() == "O") {
+            winnerDialog("-->");
+        }
+        if (b_2_1.getText() == "O" & b_2_2.getText() == "O" & b_2_3.getText() == "O") {
+            winnerDialog("-->");
+        }
+        if (b_3_1.getText() == "O" & b_3_2.getText() == "O" & b_3_3.getText() == "O") {
+            winnerDialog("-->");
+        }
+
+
+        if (b_1_1.getText() == "O" & b_2_1.getText() == "O" & b_3_1.getText() == "O") {
+            winnerDialog("-->");
+        }
+        if (b_1_2.getText() == "O" & b_2_2.getText() == "O" & b_3_2.getText() == "O") {
+            winnerDialog("-->");
+        }
+        if (b_1_3.getText() == "O" & b_2_3.getText() == "O" & b_3_3.getText() == "O") {
+            winnerDialog("-->");
+        }
+
+        if (b_1_1.getText() == "O" & b_2_2.getText() == "O" & b_3_3.getText() == "O") {
+            winnerDialog("-->");
+        }
+        if (b_3_1.getText() == "O" & b_2_2.getText() == "O" & b_1_3.getText() == "O") {
+            winnerDialog("-->");
+        }
+        if (turnCounter >= 9) {
+            winnerDialog("---");
+        }
+
     }
 
         //Stitch
@@ -259,6 +196,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         matchInProgress = false;
         b_createPlayer.setText("Match Beginnen");
         tv_turnCounter.setText("Gebt eure Namen ein und beginnt!");
+        turnCounter = 0;
         b_1_1.setText("");
         b_1_2.setText("");
         b_1_3.setText("");
@@ -270,6 +208,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b_3_1.setText("");
         b_3_2.setText("");
         b_3_3.setText("");
+
+        et_player1Name.setText("Spieler 1");
+        et_player2Name.setText("Spieler 2");
 
 
 
@@ -293,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dialog.setNegativeButton("Ok",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(getApplicationContext(),"Ergebnis eingetragen",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Ergebnis eingetragen - Pfeil zeigt auf Sieger",Toast.LENGTH_LONG).show();
             }
         });
         AlertDialog alertDialog=dialog.create();

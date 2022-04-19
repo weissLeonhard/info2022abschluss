@@ -1,5 +1,8 @@
 package com.example.info2022abschluss;
 
+
+//Ursprünglich sollte die Klasse einzelne Spielerprofile statt einem Matchverlauf anzeigen, dass ging sich nicht aus
+//deswegen heißt die Klasse immer noch "Player"
 public class Player {
     private String name1;
     private String winner;
